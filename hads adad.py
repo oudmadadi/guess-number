@@ -1,9 +1,16 @@
 from random import randint
 
-javab = randint (1, 6)
+javab = randint(1, 6)
 
-i = int(input("Guess What number is chosen?"))
-if (i == javab):
-    print ("Correct Guess!")
-else:
-    print(f"Wrong Guess! {javab} was my number!")
+while True:
+    i = int(input("Guess what number is chosen? "))
+
+    if i > javab:
+        print("My number is smaller!")
+    elif i < javab:
+        print("My number is bigger!")
+    else:
+        print(f"Your guess is correct. That was {javab}")
+        break
+
+        
