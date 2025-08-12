@@ -1,6 +1,6 @@
 from random import randint
 
-javab = randint(1, 6)
+javab = randint(1, 100)
 count = 0
 
 while True:
