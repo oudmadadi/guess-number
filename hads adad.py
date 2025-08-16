@@ -1,10 +1,10 @@
 from random import randint
 
-javab = randint(1, 1000)
+javab = randint(0, 100)
 count = 0
 
 while True:
-    i = int(input("Guess what number is chosen? "))
+    i = int(input("Guess what number is chosen? (between 0 to 100)   "))
     count += 1
 
     if i > javab:
